@@ -19,9 +19,16 @@ Easy way to learn Kubeflow Pipelines is to setup a KIND k8s cluster and configur
 
 https://kind.sigs.k8s.io/docs/user/quick-start/
 
-### Install KFP
+### Step 3: Install KFP in Kubernertes
 
 Follow the steps to setup KFP.
 
 https://www.kubeflow.org/docs/components/pipelines/operator-guides/installation/
 
+
+### Step 4: Install Python kfp package
+
+1. Create a folder - `mkdir kfp`
+2. Create a Python virtual environment - `python3 -m venv .kfp`
+3. Source the virtual environment - `source .kfp/bin/activate`
+4. Install the package - `pip3 install kfp`
