@@ -31,4 +31,4 @@ https://www.kubeflow.org/docs/components/pipelines/operator-guides/installation/
 1. Create a folder - `mkdir kfp`
 2. Create a Python virtual environment - `python3 -m venv .kfp`
 3. Source the virtual environment - `source .kfp/bin/activate`
-4. Install the package - `pip3 install kfp`
+4. Install the package - `pip3 install kfp==2.9.0`
