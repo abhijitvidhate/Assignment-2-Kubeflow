@@ -104,16 +104,53 @@ python kfp_client.py
 - `start_demo.sh` - One-click demo launcher
 - `hello_world_pipeline.yaml` - Compiled pipeline for cluster deployment
 
-## Next Steps
-
-1. **Fix cluster stability**: Resolve database connectivity issues
-2. **Fix UI access**: Find working Docker image for frontend
-3. **Expand pipeline**: Add ML components for your use case
-4. **Deploy to cluster**: Upload compiled pipeline when services are stable
 
 ## 🚀 Quick Demo
 
-### One-Command Demo Start:
+## 🚀 Quick Demo
+
+### 🛠️ Useful kubectl Commands (with sample output)
+
+Reviewers can run these in another terminal to verify cluster state.
+
+```bash
+# List all Kubeflow pods
+kubectl get pods -n kubeflow
+```
+Sample output:
+```
+NAME                                               READY   STATUS    RESTARTS   AGE
+cache-deployer-deployment-76b5f6dfb9-msvsw         1/1     Running   0          25m
+cache-server-5c9cbc6c9b-bfhp8                      1/1     Running   0          25m
+metadata-envoy-deployment-6ff5567745-gdt82         1/1     Running   0          25m
+minio-77cc99749c-2bfxg                             1/1     Running   0          25m
+ml-pipeline-78b99d9f4f-6c7zq                       1/1     Running   0          5m
+ml-pipeline-ui-6975c875f8-p689c                    0/1     ImagePullBackOff   0   12m
+...
+```
+
+```bash
+# Describe a specific pod for debugging
+kubectl describe pod ml-pipeline-78b99d9f4f-6c7zq -n kubeflow
+```
+
+```bash
+# View logs from a pod
+kubectl logs ml-pipeline-78b99d9f4f-6c7zq -n kubeflow
+```
+
+```bash
+# Delete and restart a misbehaving pod
+kubectl delete pod ml-pipeline-ui-6975c875f8-p689c -n kubeflow
+```
+
+```bash
+# Check service endpoints
+kubectl get svc -n kubeflow
+```
+
+These commands help verify that services are running, logs are healthy, and port-forward can be established.
+
 ```bash
 cd kfp && ./start_demo.sh
 ```
