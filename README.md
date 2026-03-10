@@ -172,7 +172,7 @@ cd kfp && source .kfp/bin/activate && python demo_ui.py
 ```
 
 **Demo Flow:**
-1. 📤 Upload `hello_world_pipeline.yaml`
-2. ▶️ Run pipeline with custom parameters
-3. 📊 Monitor execution in real-time
-4. 📋 View results and logs
+1. Upload `hello_world_pipeline.yaml`
+2. Run pipeline with custom parameters
+3. Monitor execution in real-time
+4. View results and logs
