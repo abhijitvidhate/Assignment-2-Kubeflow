@@ -1,11 +1,11 @@
 # Kubeflow Pipelines Implementation
-> **Repository**: `https://github.com/abhijitvidhate/Assignment-2-Kubeflow`
->
-> Clone the project:
-> ```bash
-> git clone https://github.com/abhijitvidhate/Assignment-2-Kubeflow.git
-> cd Assignment-2-Kubeflow/kubeflow
-> ```
+**Repository**: `https://github.com/abhijitvidhate/Assignment-2-Kubeflow`
+
+Clone the project:
+```bash
+git clone https://github.com/abhijitvidhate/Assignment-2-Kubeflow.git
+cd Assignment-2-Kubeflow/kubeflow
+```
 
 ## Current Status
 
