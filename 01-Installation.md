@@ -11,15 +11,15 @@ Pipelines).
 
 Follow the below guide and follow the steps according to your OS Distribution.
 
-https://docs.docker.com/desktop/setup/install/mac-install/
+https://docs.docker.com/desktop/setup/install/linux-install/
 
-### Step 2: Install KIND
+### Step 2: Install Minikube
 
-Easy way to learn Kubeflow Pipelines is to setup a KIND k8s cluster and configure Kubeflow Pipelines on the cluster. 
+Easy way to learn Kubeflow Pipelines is to setup a Minikube Kubernetes cluster and configure Kubeflow Pipelines on the cluster. 
 
-https://kind.sigs.k8s.io/docs/user/quick-start/
+https://minikube.sigs.k8s.io/docs/start/
 
-### Step 3: Install KFP in Kubernertes
+### Step 3: Install KFP in Kubernetes
 
 Follow the steps to setup KFP.
 
@@ -31,4 +31,4 @@ https://www.kubeflow.org/docs/components/pipelines/operator-guides/installation/
 1. Create a folder - `mkdir kfp`
 2. Create a Python virtual environment - `python3 -m venv .kfp`
 3. Source the virtual environment - `source .kfp/bin/activate`
-4. Install the package - `pip3 install kfp==2.9.0`
+4. Install the package - `pip3 install kfp==2.16.0`
